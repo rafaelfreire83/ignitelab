@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "blur": "url('/src/assets/blur-background.png')"
+      },
       fontFamily: {
         sans: 'Roboto, sans-serif'
       },
@@ -35,5 +38,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-children'),
+  ],
 }

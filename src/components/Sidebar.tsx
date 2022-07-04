@@ -33,6 +33,9 @@ export function Sidebar() {
       </span>
 
       <div className="flex flex-col gap-8">
+
+        {!data && <div className="flex-1"><p>Carregando...</p></div>}
+
         {data?.lessons.map(lesson => {
           return (
             <Lesson 
